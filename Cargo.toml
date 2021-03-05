@@ -1,0 +1,19 @@
+[package]
+name = "actors"
+version = "0.1.0"
+authors = ["Yakup Budanaz <yakup.paradox@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "actors"
+path = "src/lib.rs"
+
+[[bin]]
+name = "river"
+path = "src/bin/river.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mpi = { git = "https://github.com/bsteinb/rsmpi"}
