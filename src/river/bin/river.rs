@@ -1,5 +1,4 @@
-use actors::actor::Acts;
-use actors;
+use actors::Acts;
 
 #[path = "../printer.rs"]
 pub mod printer;
