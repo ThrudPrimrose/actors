@@ -1,12 +1,11 @@
+use actors::actor::Acts;
 use actors;
 
 #[path = "../printer.rs"]
 pub mod printer;
 
 fn main() {
-	let ap = actors::actor::Actor {
-		core: printer::Printer {},
-	};
+	let ap = printer::Printer {};
 	ap.act();
 	println!("Hello, this is river!");
 }
